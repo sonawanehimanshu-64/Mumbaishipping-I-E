@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#071525" />
+
+  <title>Mumbaishipping I&E | Global Shipping & Logistics</title>
+
+  <meta name="description"
+    content="Explore international sea freight, air freight, export, import and logistics coordination from Mumbai with Mumbaishipping I&E." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js"
+      }
+    }
+  </script>
+
+  <script type="module" src="3d-scene.js"></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="navbar">
+    <a class="brand" href="#home" aria-label="Mumbaishipping I&E home">
+      <span class="brand-mark">M<span>I</span></span>
+      <span class="brand-name">MUMBAISHIPPING <b>I&E</b>
+        <small>GLOBAL LOGISTICS</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About Us</a>
+      <a href="#process">How It Works</a>
+      <a class="nav-cta" href="#quote">Get a Quote ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow">
+          <span class="status-dot"></span>
+          MUMBAI · CONNECTING THE WORLD
+        </div>
+
+        <h1>
+          Your Cargo.<br />
+          <span>Our Global</span><br />
+          Connection.
+        </h1>
+
+        <p class="hero-description">
+          Connecting businesses to global markets through shipping,
+          import-export support and logistics coordination.
+          Your next destination starts here.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#quote">
+            Get Shipping Quote <span>↗</span>
+          </a>
+          <a class="button button-secondary" href="#services">
+            Explore Services <span>↓</span>
+          </a>
+        </div>
+
+        <div class="hero-note">
+          <span class="note-icon">◎</span>
+          <p><strong>From Mumbai to the world</strong>
+            <small>Shipping solutions designed around your cargo.</small>
+          </p>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="visual-glow"></div>
+        <div class="visual-label label-top">
+          <span class="pulse"></span> GLOBAL FREIGHT NETWORK
+        </div>
+
+        <div class="scene-shell">
+          <canvas id="shippingCanvas"
+            aria-label="Animated three-dimensional shipping container scene">
+          </canvas>
+          <div class="scene-fallback" id="sceneFallback">
+            <div class="fallback-container"></div>
+            <div class="fallback-container fallback-two"></div>
+            <div class="fallback-container fallback-three"></div>
+          </div>
+        </div>
+
+        <div class="floating-card card-location">
+          <span class="card-icon">⌖</span>
+          <span><small>ORIGIN HUB</small><strong>Mumbai, India</strong></span>
+        </div>
+
+        <div class="floating-card card-route">
+          <span class="route-icon">↗</span>
+          <span><small>YOUR NEXT MOVE</small><strong>Global shipping</strong></span>
+        </div>
+
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+      </div>
+
+      <div class="hero-bottom">
+        <span>INTERNATIONAL SHIPPING</span>
+        <span class="bottom-line"></span>
+        <span>IMPORT · EXPORT · LOGISTICS</span>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <span>BUILT AROUND YOUR BUSINESS</span>
+      <div>SEA FREIGHT</div>
+      <div>AIR FREIGHT</div>
+      <div>IMPORT & EXPORT</div>
+      <div>CARGO COORDINATION</div>
+    </section>
+
+    <section class="section services-section" id="services">
+      <div class="section-heading">
+        <div>
+          <span class="section-kicker">WHAT WE DO</span>
+          <h2>Shipping made <span>simpler.</span></h2>
+        </div>
+        <p>
+          Logistics support for businesses looking to move goods
+          across borders with clarity and confidence.
+        </p>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card">
+          <div class="service-icon">↗</div>
+          <span class="service-number">01 / FREIGHT</span>
+          <h3>Sea Freight</h3>
+          <p>Explore ocean shipping options for suitable cargo volumes,
+            with FCL and LCL coordination where available.</p>
+          <a href="#quote">Discuss your cargo <span>↗</span></a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">✈</div>
+          <span class="service-number">02 / AIR</span>
+          <h3>Air Freight</h3>
+          <p>Coordinate air cargo options for shipments where speed
+            and delivery schedules matter.</p>
+          <a href="#quote">Discuss your cargo <span>↗</span></a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">⇄</div>
+          <span class="service-number">03 / TRADE</span>
+          <h3>Import & Export</h3>
+          <p>Get assistance coordinating shipment requirements,
+            trade documentation and logistics partners.</p>
+          <a href="#quote">Discuss your cargo <span>↗</span></a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">⌘</div>
+          <span class="service-number">04 / SUPPORT</span>
+          <h3>Customs Coordination</h3>
+          <p>Coordinate with qualified customs professionals regarding
+            declarations, paperwork and clearance requirements.</p>
+          <a href="#quote">Discuss your cargo <span>↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="about-visual">
+        <div class="about-panel">
+          <div class="globe">◎</div>
+          <span class="section-kicker">ONE CONNECTION</span>
+          <h3>From local origins<br />to global destinations.</h3>
+          <div class="map-line"></div>
+          <div class="map-points">
+            <span>MUMBAI, INDIA</span>
+            <span>YOUR DESTINATION</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-copy">
+        <span class="section-kicker">ABOUT MUMBAISHIPPING I&E</span>
+        <h2>Global trade begins with a <span>clear plan.</span></h2>
+        <p>
+          We aim to make international shipping easier to understand
+          by helping customers explore freight options, prepare shipment
+          details and coordinate with relevant logistics partners.
+        </p>
+        <div class="about-points">
+          <div><span>✓</span><p><strong>Clear communication</strong>
+            <small>Know the information needed for your shipment.</small></p></div>
+          <div><span>✓</span><p><strong>Flexible cargo inquiries</strong>
+            <small>Share your route, cargo and preferred shipping method.</small></p></div>
+          <div><span>✓</span><p><strong>Customer-focused support</strong>
+            <small>Discuss suitable options before proceeding.</small></p></div>
+        </div>
+        <a class="button button-primary" href="#quote">Start an Inquiry ↗</a>
+      </div>
+    </section>
+
+    <section class="section process-section" id="process">
+      <div class="section-heading">
+        <div>
+          <span class="section-kicker">HOW IT WORKS</span>
+          <h2>Your shipment, <span>step by step.</span></h2>
+        </div>
+      </div>
+
+      <div class="process-grid">
+        <article><span>01</span><h3>Share Details</h3>
+          <p>Tell us the origin, destination, cargo type and quantity.</p></article>
+        <article><span>02</span><h3>Explore Options</h3>
+          <p>Discuss freight methods, requirements and indicative costs.</p></article>
+        <article><span>03</span><h3>Confirm the Plan</h3>
+          <p>Review the final terms, documentation and service arrangements.</p></article>
+        <article><span>04</span><h3>Coordinate Shipping</h3>
+          <p>Proceed with the agreed logistics provider and shipment plan.</p></article>
+      </div>
+    </section>
+
+    <section class="section quote-section" id="quote">
+      <div class="quote-copy">
+        <span class="section-kicker">LET'S MOVE YOUR CARGO</span>
+        <h2>Tell us where<br />your cargo is <span>going.</span></h2>
+        <p>
+          Fill in the details to prepare a shipping inquiry.
+          Your message will open in WhatsApp so you can review
+          and send it.
+        </p>
+        <div class="quote-contact">
+          <span>✉</span>
+          <div><small>INQUIRIES</small><strong>Shipping & logistics</strong></div>
+        </div>
+      </div>
+
+      <form id="quoteForm" class="quote-form">
+        <div class="form-heading">
+          <h3>Shipping inquiry</h3>
+          <p>Tell us a little about your shipment.</p>
+        </div>
+
+        <div class="form-row">
+          <label>Full name
+            <input name="name" type="text" placeholder="Your name" required />
+          </label>
+          <label>Business name
+            <input name="business" type="text" placeholder="Company (optional)" />
+          </label>
+        </div>
+
+        <div class="form-row">
+          <label>Origin
+            <input name="origin" type="text" value="Mumbai, India" required />
+          </label>
+          <label>Destination country
+            <input name="destination" type="text"
+              placeholder="e.g. Germany" required />
+          </label>
+        </div>
+
+        <div class="form-row">
+          <label>Shipping method
+            <select name="method" required>
+              <option value="">Select method</option>
+              <option>Sea Freight</option>
+              <option>Air Freight</option>
+              <option>Not Sure Yet</option>
+            </select>
+          </label>
+          <label>Cargo type
+            <input name="cargo" type="text"
+              placeholder="e.g. Textiles" required />
+          </label>
+        </div>
+
+        <label>Shipment details
+          <textarea name="details" rows="3"
+            placeholder="Quantity, approximate weight, dimensions and other details"></textarea>
+        </label>
+
+        <button class="button button-primary submit-button" type="submit">
+          Prepare WhatsApp Inquiry <span>↗</span>
+        </button>
+        <p class="form-message" id="formMessage" role="status"></p>
+        <small class="form-disclaimer">
+          No automatic booking or freight price is generated.
+          Final arrangements require confirmation.
+        </small>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand" href="#home">
+      <span class="brand-mark">M<span>I</span></span>
+      <span class="brand-name">MUMBAISHIPPING <b>I&E</b>
+        <small>GLOBAL LOGISTICS</small>
+      </span>
+    </a>
+    <p>Connecting Mumbai with global shipping opportunities.</p>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Mumbaishipping I&E</span>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
